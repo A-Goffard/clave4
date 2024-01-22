@@ -1,0 +1,260 @@
+/* Reset code */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    line-height: 1.2rem;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+:root {
+    --black: #121212;
+    --green: #ABDB2A;
+}
+
+
+/* Principal code */
+
+/* .ruleta {
+    position: relative;
+}
+.ruleta img {
+    position: absolute;
+} */
+
+
+body {
+    background-color: var(--black);
+    color: var(--green);
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+
+/* h1 {
+    position: absolute;
+    top: 10rem;
+    font-size: 10rem;
+    
+} */
+
+.ruleta {
+position: absolute;
+top: 0;
+
+
+}
+
+.big {
+position: absolute;
+   top: 2rem;
+   left: 40%;
+   animation-name: rotation;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   
+}
+ .medium {
+    position: absolute;
+    top: 2rem;
+    animation-name: rotation2;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+ }
+ .small {
+    position: absolute;
+    top: 2rem;
+    animation-name: rotation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+ }
+ 
+
+ img {
+    width: 50vh;
+ }
+
+/*  .pista{
+    position: absolute; */
+    /* grid-template-columns: repeat(3, 1fr); */
+   /*  top: 50rem;
+    background-color: #323239;
+    color: white;
+    width: 35rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    gap: .1rem;
+    border: solid;
+ }
+ */
+ .pista1{
+    position: absolute;
+    top: 27rem;
+    height: 6rem;
+    width: 10rem;
+    
+ }
+
+ .pista2{
+    position: absolute;
+    top: 30rem;
+    height: 3rem;
+    width:20rem;
+    
+ }
+
+ .pista3{
+    position: absolute;
+    top: 33rem;
+    height: 3rem;
+    width: 23rem;
+    
+ }
+ .btn{
+    height:4vh;
+    width: 4vh;
+    border: none;
+    background-color: #707080;
+    color: white;
+    border-radius: .2rem;
+    cursor: pointer;
+ }
+
+.btn:hover{
+    background-color: #5d5d83;
+}
+
+
+ @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotation2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+ /* Media-Queries */
+ /* @media screen and (max-width: 700px) {
+     .pista1{
+        position: absolute;
+        top: 13rem;
+        height: 4rem;
+        width: 10rem;
+        
+     }
+    
+    .pista2{
+        position: absolute;
+        top: 16rem;
+        height: 3rem;
+        width:20rem;
+        
+     }
+    
+    .pista3{
+        position: absolute;
+        top: 19rem;
+        height: 3rem;
+        width: 30rem;} 
+    
+    }
+
+@media screen and (max-width: 375px) {
+     */
+   /*  h1 {
+        font-size: 5rem;
+    } */
+    /*  
+    canvas{
+        height: 100%;
+        width: 100%;
+    }
+     */
+
+
+/* } */
+
+/* @media screen and (orientation: portrait){
+     */
+/* } */
+/* 
+@media screen and (orientation: landscape){
+    .pista1{
+        position: absolute;
+        top: 25rem;
+        height: 6rem;
+        width: 10rem;
+        
+     }
+    
+     .pista2{
+        position: absolute;
+        top: 28rem;
+        height: 3rem;
+        width:20rem;
+        
+     }
+    
+     .pista3{
+        position: absolute;
+        top: 31rem;
+        height: 3rem;
+        width: 30rem;
+
+}} */
+
+@media screen and (max-height: 400px){
+
+    .pista1{
+        position: absolute;
+        top: 2rem;
+        left: 12rem;
+        height: 6rem;
+        width: 10rem;
+        
+     }
+    
+     .pista2{
+        position: absolute;
+        top: 5rem;
+        left: 8rem;
+        height: 3rem;
+        width:20rem;
+        
+     }
+    
+     .pista3{
+
+        position: absolute;
+        left: 5rem;
+        top: 8rem;
+        height: 3rem;
+        width: 30rem;
+
+}
+
+}
